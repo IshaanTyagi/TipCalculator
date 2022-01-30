@@ -1,2 +1,2 @@
 # TipCalculator
-This is a basic Tip Calculator made by using HTML, CSS, and JavaScript.
+This is a basic [Tip Calculator](https://ishaantyagi.github.io/TipCalculator/)  made by using HTML, CSS, and JavaScript.
