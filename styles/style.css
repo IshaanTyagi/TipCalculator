@@ -1,0 +1,165 @@
+/* Fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+body {
+  font-size: larger;
+  /* background-image: url("https://cdn-media-2.freecodecamp.org/w1280/5fb5e53749c47664ed822a29.jpg"); */
+  /* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+  /* background-color: #181718; */
+  background-image: linear-gradient(to top, #4481eb 0%, #72a8bb 100%);
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  max-height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+  background-image: linear-gradient(to top, #4481eb 0%, #ffffff 100%);
+  max-width: 25em;
+  /*align-items: center;
+  */
+  align-items: flex-start;
+  /* justify-content: center; */
+  margin: auto;
+  margin-top: 10%;
+  height: 29em;
+  flex-grow: 1;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+#tip-head {
+  /* border: 2px solid purple; */
+  margin: 6px;
+  margin-top: 12px;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+#input-box {
+  border-top: 2px solid white;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  /* padding: 4em 7em; */
+  margin-top: 5px;
+  min-width: 100%;
+  /* max-height: 100%; */
+  /* font-family: "Homemade Apple", cursive; */
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Dongle", sans-serif;
+  /* font-family: "Caveat", cursive; */
+  font-size: 35px;
+}
+
+.box-el {
+  /* border: 2px dashed pink; */
+  /* width: 31.6em; */
+  margin-top: 5px;
+  margin-left: 12px;
+  margin-bottom: 16px;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid blue;
+  font-size: 17px;
+  /* font-family: "Caveat", cursive; */
+  background: none;
+  /* opacity: 0.6; */
+  mix-blend-mode: color-burn;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+  font-family: "Fredoka One", cursive;
+  color: black;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select {
+  outline: none;
+  border: none;
+  font-weight: lighter;
+  mix-blend-mode: color-burn;
+  border-bottom: 2px solid blue;
+  font-size: 17px;
+  font-family: "Fredoka One", cursive;
+  /* font-family: "Caveat", cursive; */
+  background: none;
+  border-radius: 5px;
+  padding-left: 4px;
+  width: 14rem;
+  padding-bottom: 5px;
+  /* opacity: 0.6; */
+}
+
+.fa-rupee-sign:before {
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.box-el p {
+  /* margin: 2px; */
+  margin: 2px 2px -6px 2px;
+  /* margin-top: -5px;
+  margin-bottom: -9px; */
+}
+
+/* Tip after calculation */
+
+#tip-box {
+  /* display: none; */
+  margin-left: 12px;
+  margin-bottom: 15px;
+  font-family: "Dongle", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

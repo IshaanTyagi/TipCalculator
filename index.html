@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/93fb34d5e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./logo/logo.png" />
+    <title>Tip Calculator</title>
+  </head>
+  <body ondragstart="return false" onselectstart="return false">
+    <div id="container">
+      <h2 id="tip-head">Tip Calculator</h2>
+      <div id="input-box">
+        <div class="box-el">
+          <p class="box-para">Enter the amount</p>
+          <input type="number" id="bill-amt" placeholder="Bill Amount" />
+          <!-- <label for="bill-amt">Rs.</label> -->
+          <label for="bill-amt"><i class="fas fa-rupee-sign"></i></label>
+        </div>
+        <div class="box-el">
+          <p class="box-para">Enter the number of people sharing the bill</p>
+          <input type="number" id="num-people" placeholder="Number of people" />
+        </div>
+        <div class="box-el">
+          <p class="box-para">How was the experience?</p>
+          <select name="Service Quality" id="service-input">
+            <option value="0">Choose an option</option>
+            <option value="0.05">5% (It was ok)</option>
+            <option value="0.10">10% (Good)</option>
+            <option value="0.15">15% (Outstanding)</option>
+          </select>
+        </div>
+        <div class="button">
+          <div class="box-el">
+            <!-- <p class="box-para"><button id="cal-button">Calculate!</button></p> -->
+            <span><a class="calculate" onclick="calculateTip()"></a></span>
+          </div>
+          <div class="box-el">
+            <!-- <p class="box-para"><button id="cal-button">Calculate!</button></p> -->
+            <span class="reset" onclick="reset()"><a></a></span>
+          </div>
+        </div>
+      </div>
+      <!-- Calculator End -->
+      <div id="tip-box">
+        <div id="tipRS">Rs. 0 each</div>
+        <!-- <div id="tip">0.00</div> -->
+        <!-- <div id="each">each</div> -->
+      </div>
+    </div>
+    <footer>
+      <div class="footer-social-links">
+        <a
+          href="https://www.instagram.com/its_ishaan._/"
+          title="Instagram"
+          target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://github.com/IshaanTyagi" title="Github" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ishaan-tyagi-998228146/"
+          title="LinkedIn+"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/reset.js"></script>
+  </body>
+</html>
